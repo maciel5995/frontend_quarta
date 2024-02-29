@@ -1,0 +1,120 @@
+/* Método external */
+h3 {
+    color: rgb(193, 182, 27);
+}
+
+.minha-classe-1 {
+    color: #ddff00;
+     text-align: center; 
+     font-size: 12px; 
+     background-color: aqua;
+}
+
+#meu-id-1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.imagem-background {
+    background-image: url("../assets/mustang.jpg");
+    color: white;
+    padding: 10px;
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+}
+
+.box-1 {
+    background-color: #ddff00;
+    height: 200px;
+}
+
+.box-2 {
+    background-color: #1498c8;
+    width: 200px;
+    height: 200px;
+}
+
+.padding-1 {
+    text-align: left;
+    color: black;
+    padding: 5px;
+    background-color: white;
+    border: 2px solid;
+}
+
+.padding-2 {
+    text-align: left;
+    color: black;
+    padding-left: 20px;
+    background-color: white;
+    border: 2px solid;
+}
+
+.padding-3 {
+    text-align: left;
+    color: black;
+    padding: 20px 0px 50px 5px; /* shorthand properties */
+    background-color: white;
+    border: 2px solid;
+}
+
+.width-padding-1 {
+    background-color: white;
+    color: black;
+    width: 200px;
+    padding: 10px;
+    border: 2px solid;
+}
+
+.width-padding-2 {
+    background-color: white;
+    color: black;
+    width: 200px;
+    padding: 10px;
+    border: 2px solid;
+    box-sizing: border-box;
+}
+
+.border-1 {
+    border: 1px solid blue;
+}
+
+.border-2 {
+    margin-top: 20px;
+    border-left: 1px solid blue;
+    border-bottom: 1px solid red;
+}
+
+.border-3 {
+    margin-top: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.margin-1 {
+    margin: 20px;
+}
+
+.margin-2 {
+    margin-bottom: 20px;
+}
+
+.margin-3 {
+    margin: 20px 0px 10px 50px;
+}
+
+.text-decoration-1 {
+    text-decoration: underline;
+}
+
+.text-decoration-2 {
+    text-decoration: line-through;
+}
+ .letter-spacing {
+    margin-top: 20px;
+    letter-spacing: 5px;
+ }
