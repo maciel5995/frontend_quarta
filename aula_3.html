@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03-Formulários</title>
+    <style>
+        div {
+            margin-bottom: 20px;
+        }
+        label, input {
+            display: block;
+        }
+        .radio label,
+        .radio input {
+            display: inline-block;
+        }
+        .checkbox label,
+        .checkbox input {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- <form action="" method="POST"> -->
+        <form action="">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" value="Rodrigo">
+            </div>
+            <div>
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" value="Criciúma" disabled>
+            </div>
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="text" name="telefone" placeholder="Digite seu telefone...">
+            </div>
+            <div>
+                <label for="nome_mae">Nome da mãe:</label>
+                <input type="text" name="nome_mae" required>
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email">
+            </div>
+            <div>
+                <label for="idade">Idade:</label>
+                <input type="number" name="idade">
+            </div>
+            <div>
+                <label for="data">Escolha uma data:</label>
+                <input type="date" name="data">
+            </div>
+            <div>
+                <label for="senha">Digite sua senha:</label>
+                <input type="password" name="senha">
+            </div>
+
+            <!-- pode escolher apenas uma opção -->
+            <label for="time_preferido" style="margin-bottom: 10px;">Qual seu time favorito?</label>
+            <div class="radio">
+                <input type="radio" name="time_preferido">
+                <label>Grêmio</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="time_preferido">
+                <label>São Paulo</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="time_preferido">
+                <label>Flamengo</label>
+            </div>
+            <!-- pode escolher várias opções -->
+            <label for="disciplinas" style="margin-bottom: 10px;">Escolha as disciplinas do semestre:</label>
+            <div class="checkbox">
+                <input type="checkbox" name="disciplinas[]">
+                <label>Front-end</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="disciplinas[]">
+                <label>Back-end</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="disciplinas[]">
+                <label>Banco de Dados</label>
+            </div>
+
+            <!-- apenas um arquivo -->
+            <div>
+                <label style="margin-bottom: 10px;">Envie um arquivo:</label>
+                <input type="file">
+            </div>
+            <!-- varios arquivos -->
+            <div>
+                <label style="margin-bottom: 10px;">Envie um ou mais arquivo:</label>
+                <input type="file" multiple>
+            </div>
+            <!-- seleção simples -->
+            <div>
+                <label style="margin-bottom: 10px;">Selecione uma opção:</label>
+                <select name="produto">
+                    <option value="produto_1">Caderno</option>
+                    <option value="produto_2">Caneta</option>
+                    <option value="produto_3">Borracha</option>
+                    <!-- <option value="produto_3" selected>Borracha</option> -->
+                </select>
+            </div>
+            <!-- seleção múltipla -->
+            <div>
+                <label style="margin-bottom: 10px;">Selecione uma ou mais opções:</label>
+                <select name="produtos" multiple>
+                    <option value="produto_1">Caderno</option>
+                    <option value="produto_2">Caneta</option>
+                    <option value="produto_3">Borracha</option>
+                    <!-- <option value="produto_3" selected>Borracha</option> -->
+                </select>
+            </div>
+            <!-- área de texto -->
+            <div>
+                <label style="margin-bottom: 10px;">Deixe seu comentário:</label>
+                <textarea></textarea>
+                <!-- <textarea cols="30" rows="10"></textarea> -->
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend style="margin-bottom: 10px;">Nome completo:</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="nome">
+                </fieldset>    
+            </div>
+
+            <div>
+                <label for="cidade">Escolha uma cidade:</label>
+                <input type="text" name="cidade" list="cidades">
+
+                <datalist id="cidades">
+                    <option value="Criciúma"></option>
+                    <option value="Içara"></option>
+                    <option value="Cocal do Sul"></option>
+                    <option value="Maracajá"></option>
+                </datalist>
+            </div>
+
+            <div>
+                <input type="reset" value="Limpar"  style="display: inline-block;">
+                <input type="submit" value="Enviar" style="display: inline-block;">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
